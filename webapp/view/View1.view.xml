@@ -10,7 +10,8 @@
     >
         <Table
             id="idProducts"
-            items="{/results}"
+            items="{/Products}"
+            fixedLayout="false"
         >
             <columns>
                 <Column id="id-title">
@@ -43,6 +44,12 @@
                         text="Release Date"
                     />
                 </Column>
+                <Column id="btns-title">
+                    <Text
+                        id="buttons"
+                        text=""
+                    />
+                </Column>
             </columns>
             <items>
                 <ColumnListItem id="columnListItems1">
@@ -59,14 +66,38 @@
                             id="priceData"
                             text="{Price}"
                         />
-                        <Text
-                            id="ratingData"
-                            text="{Rating}"
+                        <Input
+                            id="input"
+                            value="{Rating}"
+                            editable="false"
                         />
                         <Text
                             id="releaseDateData"
                             text="{ReleaseDate}"
                         />
+                        <HBox id="btns">
+                            <Button
+                                id="something"
+                                icon="sap-icon://edit"
+                                text="Edit"
+                                press="oEdit"
+                            />
+                            <Button
+                                id="second"
+                                icon="sap-icon://delete"
+                                text="Delete"
+                                class="sapUiSmallMarginBeginEnd"
+                                type="Reject"
+                                press="oDelete"
+                            />
+                            <Button
+                                id="third"
+                                icon="sap-icon://copy"
+                                text="Duplicate"
+                                type="Success"
+                                press="oDuplicate"
+                            />
+                        </HBox>
                     </cells>
                 </ColumnListItem>
             </items>
