@@ -8,16 +8,65 @@
         id="page"
         title="{i18n>title}"
     >
-        <Table id="idProducts" items="{/results}">
+        <Table
+            id="idProducts"
+            items="{/results}"
+        >
             <columns>
                 <Column id="id-title">
-                    <Text id="idTitle" text="ID" />
+                    <Text
+                        id="idTitle"
+                        text="ID"
+                    />
+                </Column>
+                <Column id="name-title">
+                    <Text
+                        id="nameTitle"
+                        text="Name"
+                    />
+                </Column>
+                <Column id="price-title">
+                    <Text
+                        id="priceTitle"
+                        text="Price"
+                    />
+                </Column>
+                <Column id="rating-title">
+                    <Text
+                        id="ratingTitle"
+                        text="Rating"
+                    />
+                </Column>
+                <Column id="releaseDate-title">
+                    <Text
+                        id="releaseDateTitle"
+                        text="Release Date"
+                    />
                 </Column>
             </columns>
             <items>
                 <ColumnListItem id="columnListItems1">
                     <cells>
-                        <Text id="idData" text="{ID}" />
+                        <Text
+                            id="idData"
+                            text="{ID}"
+                        />
+                        <Text
+                            id="nameData"
+                            text="{Name}"
+                        />
+                        <Text
+                            id="priceData"
+                            text="{Price}"
+                        />
+                        <Text
+                            id="ratingData"
+                            text="{Rating}"
+                        />
+                        <Text
+                            id="releaseDateData"
+                            text="{ReleaseDate}"
+                        />
                     </cells>
                 </ColumnListItem>
             </items>
