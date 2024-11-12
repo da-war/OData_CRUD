@@ -8,28 +8,16 @@
         id="page"
         title="{i18n>title}"
     >
-        <Table id="idProducts">
+        <Table id="idProducts" items="{/results}">
             <columns>
                 <Column id="id-title">
-                    <Text text="ID" />
-                </Column>
-                <Column id="">
-                    <Text />
-                </Column>
-                <Column id="">
-                    <Text id="" text="" />
-                </Column>
-                <Column id="">
-                    <Text id="ds" text="" />
-                </Column>
-                <Column>
-                    <Text />
+                    <Text id="idTitle" text="ID" />
                 </Column>
             </columns>
             <items>
-                <ColumnListItem>
+                <ColumnListItem id="columnListItems1">
                     <cells>
-                        <Text text="{ID}" />
+                        <Text id="idData" text="{ID}" />
                     </cells>
                 </ColumnListItem>
             </items>
